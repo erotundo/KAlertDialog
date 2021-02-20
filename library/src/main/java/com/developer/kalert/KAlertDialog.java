@@ -326,7 +326,7 @@ public class KAlertDialog extends AlertDialog implements View.OnClickListener {
         dismissWithAnimation(true);
     }
 
-    private KAlertDialog setConfirmButtonHeight (int height){
+    public KAlertDialog setConfirmButtonHeight (int height){
         mConfirmHeight = height;
         if(mConfirmButton != null && mConfirmHeight != 0){
             mConfirmButton.setHeight(mConfirmHeight);
@@ -334,7 +334,7 @@ public class KAlertDialog extends AlertDialog implements View.OnClickListener {
         return this;
     }
 
-    private KAlertDialog setCancelButtonHeight (int height){
+    public KAlertDialog setCancelButtonHeight (int height){
         mCancelHeight = height;
         if(mConfirmButton != null && mCancelHeight != 0){
             mConfirmButton.setHeight(mCancelHeight);

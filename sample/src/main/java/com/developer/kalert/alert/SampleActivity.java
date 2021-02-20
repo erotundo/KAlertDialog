@@ -41,6 +41,7 @@ public class SampleActivity extends Activity implements View.OnClickListener{
                 sd.setTitleText("Title");
                 sd.setContentText("Content");
                 sd.setConfirmText("Ok");
+                sd.setConfirmButtonHeight(0);
                 sd.setCancelable(true);
                 sd.setCanceledOnTouchOutside(true);
                 sd.show();

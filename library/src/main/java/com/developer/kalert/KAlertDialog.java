@@ -11,6 +11,7 @@ import android.text.util.Linkify;
 import android.util.TypedValue;
 
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
@@ -20,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
@@ -329,7 +331,7 @@ public class KAlertDialog extends AlertDialog implements View.OnClickListener {
     public KAlertDialog setConfirmButtonHeight (int height){
         mConfirmHeight = height;
         if(mConfirmButton != null && mConfirmHeight != 0){
-            mConfirmButton.setHeight(mConfirmHeight);
+            mConfirmButton.setLayoutParams(new LinearLayout.LayoutParams(mConfirmHeight,mConfirmHeight));
         }
         return this;
     }
